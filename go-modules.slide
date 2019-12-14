@@ -1,0 +1,41 @@
+Go Modules
+17 Dec 2019
+
+Georgekutty Joyes
+Senior Software Engineer, Qburst
+georgekutty@qburst.com
+
+* Today we will
+
+- Look at why we need package management in Go
+- Introduce Go Modules
+- See how you can get started using modules
+
+* Why do we need package management in Go?
+
+* Step1: We start to write a program P
+
+.image images/s1.png
+
+
+* Step2: We add a dependency on D
+
+.image images/s2.png
+
+* Step3: We add a dependency on C
+
+.image images/s3.png
+
+* Step4: We update C (and its dependencies)
+
+.image images/s4.png
+
+* Introduce Go Modules
+
+Modules provide an integrated solution for three key problems that have been a pain point for developers since Go’s initial release:
+
+- Ability to work with Go code outside of the GOPATH workspace.
+
+- Ability to version a dependency and identify the most compatible version to use.
+
+- Ability to manage dependencies natively using the Go tooling.
