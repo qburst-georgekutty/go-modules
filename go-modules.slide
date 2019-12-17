@@ -39,3 +39,29 @@ Modules provide an integrated solution for three key problems that have been a p
 - Ability to version a dependency and identify the most compatible version to use.
 
 - Ability to manage dependencies natively using the Go tooling.
+
+* The Principles of versioning in Go
+
+* Compatibility
+
+Import Compatibility rule - if an old package and a new package have the same import path, the new package must be backward-compatible with the old package.
+
+* Repeatability
+
+The result of a build of a given version of a package should not change over time.
+
+* Cooperation
+
+We must all work together to maintain the Go package ecosystem. Tools cannot work around a lack of cooperation.
+
+* Limitations
+
+.image images/s5.png
+
+* Identify the most compatible version
+
+.image images/s6.png
+
+* Semantic Import versioning
+
+.image images/s7.png
